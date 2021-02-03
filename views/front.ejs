@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Pagina</title>
+</head>
+
+<body bgcolor="grey">
+    <h1>Front-End</h1>
+    <% for(i=0; i<dados.length; i++){ %>
+        <p>
+            <%=dados[i].conteudo %>
+        </p>
+        <%}%>
+
+        <div> 
+            <p> <a href="/">Home</a> </p>
+            <p> <a href="/back">Backend</a></p>
+            <p> <a href="/cadastro">Cadastro</a></p>
+       </div>
+</body>
+
+</html>

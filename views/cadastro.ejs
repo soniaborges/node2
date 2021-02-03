@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Cadastre a Tecnologia</h1>
+
+    <p>Selecione a categoria:
+    <form method="post" action="/cadastro/salvar">
+        <!-- O segundo valor estará selecionado inicialmente -->
+    <select name="categoria">
+    <option value="back">Backend</option>
+    <option value="front" selected>Frontend</option>
+    </select></p>
+    <br>
+        Conteudo da Tecnologia: <input type="text" name="conteudo"> <br />
+        <br><input type="submit">
+    </form>
+<hr>
+    <div> 
+        <p> <a href="/">Home</a> </p>
+        <p> <a href="/front">Frontend</a> </p>
+        <p> <a href="/back">Backend</a></p>
+    </div>
+    
+</body>
+
+</html>
