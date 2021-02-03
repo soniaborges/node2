@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Pagina</title>
+    <style>
+        .bodyframe{
+            background: rgba(161, 224, 12, 0.8);}
+    </style>
 </head>
 
-<body bgcolor="grey">
+<body class="bodyframe" >
+
+    <ul> 
+        <li> <a href="/">Home</a> </li>
+        <li> <a href="/back">Back-End</a></li>
+        <li> <a href="/cadastro">Cadastro</a></li>
+   </ul>
+   <hr>
+   
     <h1>Front-End</h1>
     <% for(i=0; i<dados.length; i++){ %>
         <p>
@@ -15,11 +27,7 @@
         </p>
         <%}%>
 
-        <div> 
-            <p> <a href="/">Home</a> </p>
-            <p> <a href="/back">Backend</a></p>
-            <p> <a href="/cadastro">Cadastro</a></p>
-       </div>
+ 
 </body>
 
 </html>

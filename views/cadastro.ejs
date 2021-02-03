@@ -5,28 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <style>
+        .bodyframe{
+            background: #cccc;}
+    </style>
 </head>
 
-<body>
+<body class = "bodyframe">
+
+    <ul> 
+        <li> <a href="/">Home</a> </li>
+        <li> <a href="/front">Frontend</a></li>
+        <li> <a href="/back">Backend</a></li>
+   </ul>
+
+   <hr>
+
     <h1>Cadastre a Tecnologia</h1>
 
     <p>Selecione a categoria:
     <form method="post" action="/cadastro/salvar">
         <!-- O segundo valor estará selecionado inicialmente -->
     <select name="categoria">
-    <option value="back">Backend</option>
-    <option value="front" selected>Frontend</option>
+    <option value="back">Back-end</option>
+    <option value="front" selected>Front-end</option>
     </select></p>
     <br>
         Conteudo da Tecnologia: <input type="text" name="conteudo"> <br />
         <br><input type="submit">
     </form>
-<hr>
-    <div> 
-        <p> <a href="/">Home</a> </p>
-        <p> <a href="/front">Frontend</a> </p>
-        <p> <a href="/back">Backend</a></p>
-    </div>
+
     
 </body>
 
